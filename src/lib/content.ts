@@ -153,6 +153,13 @@ export const education = [
       { label: "Capstone 2 (Tableau)", url: "https://public.tableau.com/app/profile/timothy.okuda/viz/Capstone2_Draft_11_03_21/Capstone2" },
     ],
   },
+  {
+    name: "Bachelor of Arts (BA) in Film & Media Studies",
+    provider: "University of California, Irvine",
+    period: "September 2005 – December 2007",
+    description: "",
+    capstones: [],
+  },
 ];
 
 export const navLinks = [

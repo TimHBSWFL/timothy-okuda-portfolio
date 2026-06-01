@@ -26,19 +26,21 @@ export default function Education() {
                 <p className="mt-4 text-sm leading-relaxed text-muted">
                   {item.description}
                 </p>
-                <div className="mt-4 flex flex-wrap gap-3">
-                  {item.capstones.map((c) => (
-                    <a
-                      key={c.url}
-                      href={c.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-mono text-xs text-accent hover:text-accent-soft underline underline-offset-4"
-                    >
-                      {c.label}
-                    </a>
-                  ))}
-                </div>
+                {item.capstones.length > 0 && (
+                  <div className="mt-4 flex flex-wrap gap-3">
+                    {item.capstones.map((c) => (
+                      <a
+                        key={c.url}
+                        href={c.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-mono text-xs text-accent hover:text-accent-soft underline underline-offset-4"
+                      >
+                        {c.label}
+                      </a>
+                    ))}
+                  </div>
+                )}
               </article>
             </Reveal>
           ))}
