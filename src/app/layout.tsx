@@ -18,6 +18,7 @@ const siteUrl = "https://timothy-okuda-portfolio.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  verification: { google: "iIWLCQTu_DayMOggnKY6Z0tqKi3sSdeL3xQBTtKzI-Q" },
   title: "Tim Okuda — Data Analyst & Analytics Engineer",
   description: profile.about,
   authors: [{ name: profile.name }],
